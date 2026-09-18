@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* li 요소 중 첫번째 */
+        li:first-child {
+            color: red;
+        }
+        /* li 요소 중 마지막 */
+        li:last-child{
+            color:blue;
+        }
+        /* li 요소 중에서 홀수 */
+        /* li:nth-child(1),
+        li:nth-child(3),
+        li:nth-child(5),
+        li:nth-child(7),
+        li:nth-child(9){
+            background: gray;
+        } */
+        /* li 요소 중 짝수 */
+        /* li:nth-child(2n+1){
+            background: gray
+        } */
+
+        /* ul 자식 요소 중에서 짝수인것. */
+        ul *:nth-child(2n+1){
+            background: gray;
+        }
+
+    </style>
+    <ul>
+        <div>메뉴0</div>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <li>메뉴5</li>
+        <li>메뉴6</li>
+        <li>메뉴7</li>
+        <li>메뉴8</li>
+        <li>메뉴9</li>
+        <li>메뉴10</li>
+        <li>메뉴11</li>
+    </ul>
+</body>
+</html>

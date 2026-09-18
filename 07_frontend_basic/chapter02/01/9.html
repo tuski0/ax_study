@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        ul::before{
+            content: '첫번째';
+        }
+        ul::after{
+            content: '마지막';
+        }
+        /* 기본값 색상 변경 */
+        textarea::placeholder{
+            color:red;
+        }
+        /* 드래그 색상 변경 */
+        .text::selection{
+            background:yellow;
+        }
+    </style>
+    <ul>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+    </ul>
+
+    <textarea placeholder="자기소개를 입력하세요..." rows="5" cols="50"></textarea>
+    <div class="text">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus sit vitae iste esse, id ad nostrum placeat, porro voluptates, iure et officia consequuntur? Consectetur optio saepe dolore, reiciendis perferendis ipsum?
+    </div>
+</body>
+</html>

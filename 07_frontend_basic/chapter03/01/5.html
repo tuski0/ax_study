@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0;
+            padding: 10%;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            border: 3px solid #000;
+            height:100px;
+            flex-wrap : wrap;
+        }
+        li{
+            /* min-width: 100px; */
+            flex-basis: 200px;
+            flex-shrink: 0;
+        }
+
+        li:nth-of-type(3n+1){
+            background: red;
+        }
+        li:nth-of-type(3n+2){
+            background: blue;
+        }
+        li:nth-of-type(3n){
+            background: gray;
+        }
+
+        .flex1{
+            display : flex;
+            align-items: stretch;
+        }
+    </style>
+    <h3></h3>
+    <ul class="flex1">
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <li>메뉴5</li>
+        <li>메뉴6</li>
+        <li>메뉴7</li>
+        <li>메뉴8</li>
+        <li>메뉴9</li>
+        <li>메뉴10</li>
+        <li>메뉴11</li>
+        <li>메뉴12</li>
+        <li>메뉴13</li>
+        <li>메뉴14</li>
+        <li>메뉴15</li>
+    </ul>
+</body>
+</html>

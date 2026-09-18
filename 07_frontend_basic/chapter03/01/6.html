@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box1{
+            width: 500px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr) ;
+            font-size:1.5rem;
+            gap: 20px 10px;
+            place-items: center;
+            background-color: skyblue;
+        }∆
+        .card{
+            
+            height: 100px;
+        }
+        .card span{
+            border: 3px solid black;
+            /* background: red; */
+            color: black;
+
+        }
+    </style>
+
+    <div class="box1">
+        <div class="card"><span>A</span></div>
+        <div class="card"><span>B</span></div>
+        <div class="card"><span>C</span></div>
+        <div class="card"><span>D</span></div>
+        <div class="card"><span>E</span></div>
+        <div class="card"><span>F</span></div>
+    </div>
+</body>
+</html>

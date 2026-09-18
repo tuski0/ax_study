@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        /* 조상 - 자손 선택자 */
+        ol span{
+            background : orange;
+        }
+        /* 부모 > 자녀 선택자 */
+        li div > span{
+            background: skyblue;
+        }
+    </style>
+    <ul>
+        <li>menu1</li>
+        <li>menu2</li>
+        <li><span>menu3</span></li>
+        <li>menu4
+            <ol>
+                <li>
+                    <div>
+                        <span>sub menu1</span>
+                    </div>
+                </li>
+                <li><span>sub menu2</span></li>
+                <li>sub menu3</li>
+            </ol>
+        </li>
+        <li>menu5</li>
+    </ul>
+</body>
+</html>
