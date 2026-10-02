@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .box{
+            padding: 150px;
+            background: gray;
+        }
+
+        .box2 {
+            background: orange;
+        }
+
+        .box3 {
+            background: black;
+        }
+    </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', function() {
+            const box1 = document.querySelector('.box1');
+            const box2 = document.querySelector('.box2');
+            const box3 = document.querySelector('.box3');
+
+            box1.addEventListener('click', function(e) {
+                console.log('box1 click');
+            });
+
+            box2.addEventListener('click', function(e) {
+                console.log('box2 click');
+            }, true); // 캡처링 단계 이벤트 전파
+
+            box2.addEventListener('click', function(e) {
+                console.log('box3 click');
+                console.log(e);
+                // e.stopPropagation();
+                e.stopImmediatePropagation();
+            });
+        });
+    </script>
+    <div class="box box1">
+        <div class="box box2">
+            <div class="box box3">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

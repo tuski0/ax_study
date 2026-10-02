@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            const animal4 = document.createElement('li');
+            const animal4Txt = document.createTextNode('불독');
+            animal4.appendChild(animal4Txt);
+            const animals = document.querySelector('.animal');
+            const prepend = document.getElementById('prepend');
+            prepend.addEventListener("click", function() {
+                animals.prepend(animal4);
+            });
+            const remove = document.getElementById('remove');
+            remove.addEventListener("click", function() {
+                animals.remove(animal4);
+            });
+        });
+        
+
+
+    </script>
+        <img src="./imgs/1.jpg" />
+        <img src="./imgs/1_on.png" />
+</body>
+</html>
